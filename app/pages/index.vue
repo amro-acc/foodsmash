@@ -1,0 +1,66 @@
+<script setup lang="ts">
+import { BookOpen, Users, Star } from 'lucide-vue-next';
+</script>
+
+<template>
+  <div>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">The perfect pair for your plate.</h1>
+        <p class="hero-subtitle">
+          Find the weirdest and most wonderful food combinations, recommended by
+          our community of food lovers.
+        </p>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="e.g. marmite and cheese"
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </div>
+    <section class="features-section">
+      <FeatureCard
+        title="Discover new flavours"
+        description="Explore a world of unexpected taste sensations and find your next favorite meal."
+      >
+        <BookOpen :size="48" class="feature-icon" />
+      </FeatureCard>
+      <FeatureCard
+        title="Join the community"
+        description="Connect with fellow food enthusiasts, share your own creations, and get feedback."
+      >
+        <Users :size="48" class="feature-icon" />
+      </FeatureCard>
+      <FeatureCard
+        title="Rate and review"
+        description="Help others by rating and reviewing combinations, and climb the leaderboard."
+      >
+        <Star :size="48" class="feature-icon" />
+      </FeatureCard>
+    </section>
+
+    <section class="recent-combos-section">
+      <h2 class="section-title">Recent Combo's</h2>
+      <div class="combo-grid">
+        <ComboCard
+          title="Marmite & Cheese"
+          description="A classic savory delight, loved by many."
+          :tags="['Savory', 'Classic']"
+        />
+        <ComboCard
+          title="Maltesers & Salt & Vinegar Crisps"
+          description="An unexpected sweet and salty crunch."
+          :tags="['Sweet', 'Salty', 'Crunchy']"
+        />
+        <ComboCard
+          title="Strawberries & Black Pepper"
+          description="A surprising burst of sweet and spicy."
+          :tags="['Fruity', 'Spicy']"
+        />
+      </div>
+    </section>
+  </div>
+</template>
