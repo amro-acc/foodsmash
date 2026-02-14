@@ -1,6 +1,6 @@
 # FoodSmash - Gemini CLI Starter App
 
-This is a dummy Nuxt 3 application named "FoodSmash" developed primarily to demonstrate and teach the capabilities of the Gemini CLI!!!
+This is a dummy Nuxt 3 application named "FoodSmash" developed primarily to demonstrate the capabilities of the Gemini CLI!!!
 
 ## Project Setup
 
@@ -31,7 +31,4 @@ http://localhost:3000
 ```
 
 You should now see the FoodSmash application running.
-=======
-# foodsmash
-Playing with Gemini CLI
 
